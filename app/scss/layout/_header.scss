@@ -1,0 +1,15 @@
+.header {
+  height: 100%;
+  background-color: orange;
+
+  &__cta {
+    font-weight: 600;
+    letter-spacing: 11.84px;
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: var(--color-black);
+    }
+  }
+}
