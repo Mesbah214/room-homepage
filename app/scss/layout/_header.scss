@@ -1,9 +1,30 @@
 .header {
   height: 100%;
-  background-color: orange;
+
+  &__hero {
+    background-color: yellow;
+    display: flex;
+  }
+
+  &__img {
+    width: 58.33%;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    background-color: red;
+  }
+
+  &__img-container {
+    width: 300%;
+    display: flex;
+  }
+
+  &__about-our-furniture {
+    background-color: yellowgreen;
+  }
 
   &__cta {
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 11.84px;
     text-transform: uppercase;
 
@@ -11,5 +32,26 @@
       text-decoration: none;
       color: var(--color-black);
     }
+  }
+}
+
+.slider-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header__hero-copy {
+  position: relative;
+  overflow: hidden;
+  &-container {
+    display: flex;
+    width: 300%;
+  }
+
+  &-items {
+    width: 100%;
+    padding: 1rem;
+    // flex-shrink: 0;
   }
 }
