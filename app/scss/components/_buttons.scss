@@ -1,5 +1,16 @@
-.controls {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+button {
+  background-color: var(--color-black);
+  border: none;
+  outline: none;
+  display: block;
+  padding: 1.75rem 2.1rem;
+
+  svg {
+    height: 1.8rem;
+    color: white;
+  }
+
+  &:hover {
+    background-color: var(--color-dark-gray);
+  }
 }

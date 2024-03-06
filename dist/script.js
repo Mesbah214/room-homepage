@@ -15,15 +15,11 @@
     if (counter > 0) counter--;
     imgSlider.style.transform = "translateX("+ -counter * 33.33 +"%)";
     textSlider.style.transform = "translateX("+ -counter * 33.33 +"%)";
-    // textSlider.style.transform = "translateX(20%)";
-    console.log(imgSlider)
   }
 
   function nextBtnClickHandler() {
     if (counter < 2) counter++;
     imgSlider.style.transform = "translateX("+ -counter * 33.33 +"%)";
     textSlider.style.transform = "translateX("+ -counter * 33.33 +"%)";
-    // textSlider.style.transform = "translateX(20%)";
-    console.log(textSlider)
   }
 })();

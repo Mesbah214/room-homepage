@@ -33,33 +33,45 @@
       <div class="header__hero">
         <div class="header__img">
           <div class="header__img-container">
-            <div class="slider-img">
-              <img
-                src="./css/resources/desktop-image-hero-1.jpg"
-                alt="white chair"
-              />
-            </div>
-            <div class="slider-img">
-              <img
-                src="./css/resources/desktop-image-hero-2.jpg"
-                alt="white & orange chair"
-              />
-            </div>
-            <div class="slider-img">
-              <img
-                src="./css/resources/desktop-image-hero-3.jpg"
-                alt="black chair"
-              />
-            </div>
+            <div class="slider-img slider-img-1"></div>
+            <div class="slider-img slider-img-2"></div>
+            <div class="slider-img slider-img-3"></div>
+          </div>
+
+          <!-- Buttons to change slides -->
+          <div class="controls">
+            <button id="prev">
+              <svg width="14" height="24" viewbox="0 0 14 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 0L1 12l12 12"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <button id="next">
+              <svg width="14" height="24" viewbox="0 0 14 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 0l12 12L1 24"
+                  stroke="#FFF"
+                  stroke-width="2"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
           </div>
         </div>
+
         <div class="header__hero-copy">
           <div class="header__hero-copy-container">
             <div class="header__hero-copy-items">
               <h1 class="primary-heading">
                 Discover innovative ways to decorate
               </h1>
-              <p>
+              <p class="lead">
                 We provide unmatched quality, comfort, and style for property
                 owners across the country. Our experts combine form and function
                 in bringing your vision to life. Create a room in your own style
@@ -88,7 +100,7 @@
               <h1 class="primary-heading">
                 We are available all across the globe
               </h1>
-              <p>
+              <p class="lead">
                 With stores all over the world, it's easy for you to find
                 furniture for your home or place of business. Locally, we’re in
                 most major cities throughout the country. Find the branch
@@ -117,7 +129,7 @@
               <h1 class="primary-heading">
                 Manufactured with the best materials
               </h1>
-              <p>
+              <p class="lead">
                 Our modern furniture store provide a high level of quality. Our
                 company has invested in advanced technology to ensure that every
                 product is made as perfect and as consistent as possible. With
@@ -142,14 +154,13 @@
               </div>
             </div>
           </div>
-          <div class="controls">
-            <button id="prev">prev</button>
-            <button id="next">next</button>
-          </div>
         </div>
       </div>
-      <div class="header__about-our-furniture">
-        <div class="header__img-left"></div>
+
+      <!-- <div class="header__about-our-furniture">
+        <div class="header__img-left">
+          <img src="./css/resources/image-about-dark.jpg" alt="black chair" />
+        </div>
         <div class="header__copy">
           <h3 class="secondary-heading">About our furniture</h3>
           <p>
@@ -161,14 +172,10 @@
             help you create your dream space.
           </p>
         </div>
-        <div class="header__img-right"></div>
-      </div>
+        <div class="header__img-right">
+          <img src="./css/resources/image-about-light.jpg" alt="white chair" />
+        </div>
+      </div> -->
     </header>
-    <!--
-	nav
-	header
-	main
-		section
-	footer
-	 --></body>
+  </body>
 </html>

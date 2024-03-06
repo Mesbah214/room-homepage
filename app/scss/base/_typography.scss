@@ -1,8 +1,14 @@
 .primary-heading {
   font-size: 4.8rem;
   font-weight: 600;
+  line-height: normal;
   letter-spacing: -1.92px;
   color: var(--color-black);
+  margin-bottom: 3.2rem;
+}
+
+.lead {
+  margin-bottom: 2.8rem;
 }
 
 .secondary-heading {

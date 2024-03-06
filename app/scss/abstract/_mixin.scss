@@ -7,6 +7,7 @@
   }
 
   @if $breakpoint == md {
+    //768px
     @media (min-width: 48em) {
       @content;
     }
@@ -20,6 +21,13 @@
 
   @if $breakpoint == xl {
     @media (min-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 2xl {
+    //1440px
+    @media (min-width: 90em) {
       @content;
     }
   }
