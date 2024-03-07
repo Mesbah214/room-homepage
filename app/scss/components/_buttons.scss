@@ -8,9 +8,17 @@ button {
   svg {
     height: 1.8rem;
     color: white;
+
+    @include respond(md) {
+      height: 2.4rem;
+    }
   }
 
   &:hover {
     background-color: var(--color-dark-gray);
+  }
+
+  @include respond(md) {
+    padding: 2.65rem 3.3rem;
   }
 }
