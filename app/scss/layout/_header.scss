@@ -111,83 +111,28 @@
   &__about-our-furniture {
   }
 
-  &__img-left {
+  &__furniture__img {
   }
 
   &__copy {
+    padding: 5.2rem 3.2rem;
   }
 
   &__img-right {
   }
 }
 
-/*
-@include respond(2xl) {
-  .header {
-    &__hero {
-      display: flex;
-    }
+.about__image {
+  height: 26.6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-    &__img {
-      width: 58.33%;
-      flex-shrink: 0;
-      position: relative;
-      overflow: hidden;
-      background-color: red;
-    }
-
-    &__img-container {
-      width: 300%;
-      display: flex;
-    }
-
-    &__about-our-furniture {
-      display: flex;
-
-      img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-
-      @include respond(2xl) {
-      }
-    }
-
-    &__copy {
-      padding: 6.8rem 4.8rem 0 4.8rem;
-      width: 40.5%;
-
-      h3 {
-        margin-bottom: 2.4rem;
-      }
-    }
+  &-1 {
+    background-image: url("./resources/image-about-dark.jpg");
   }
 
-  .slider-img img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .header__hero-copy {
-    position: relative;
-    overflow: hidden;
-
-    &-container {
-      display: flex;
-      width: 300%;
-      height: 100%;
-    }
-
-    &-items {
-      display: inherit;
-      flex-direction: column;
-      justify-content: center;
-      width: 67%;
-      padding: 0 10rem;
-      // flex-shrink: 0;
-    }
+  &-2 {
+    background-image: url("./resources/image-about-light.jpg");
   }
 }
-*/
