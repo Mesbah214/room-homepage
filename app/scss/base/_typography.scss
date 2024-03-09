@@ -8,7 +8,7 @@
   color: var(--color-black);
   margin-bottom: 2.8rem;
 
-  @include respond(2xl) {
+  @include respond(xl) {
     font-size: 4.8rem;
   }
 }
@@ -24,6 +24,10 @@
   letter-spacing: 6.72px;
   text-transform: uppercase;
   margin-bottom: 2.4rem;
+
+  @include respond(xl) {
+    font-size: 1.6rem;
+  }
 }
 
 .header__cta {

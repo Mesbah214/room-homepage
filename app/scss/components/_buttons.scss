@@ -1,4 +1,4 @@
-button {
+.controls button {
   background-color: var(--color-black);
   border: none;
   outline: none;
@@ -8,10 +8,13 @@ button {
   svg {
     height: 1.8rem;
     color: white;
+    opacity: 100%;
 
     @include respond(md) {
       height: 2.4rem;
     }
+
+    transition: opacity 0.8s cubic-bezier(0.87, 0, 0.13, 1);
   }
 
   &:hover {
