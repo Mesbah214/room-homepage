@@ -47,10 +47,6 @@
       }
     }
 
-    &-button svg[name="nav_close"] {
-      display: none;
-    }
-
     & .pos-fixed {
       position: fixed;
       display: flex;
@@ -148,4 +144,8 @@
   &__show {
     display: block;
   }
+}
+
+#nav_close {
+  display: none;
 }

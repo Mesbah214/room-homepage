@@ -1,5 +1,4 @@
 // Slider
-
 (function slider() {
   const imgSlider = document.querySelector(".header__img-container");
   const textSlider = document.querySelector(".header__hero-copy-container");
@@ -53,12 +52,8 @@
   const nav = document.querySelector(".navbar__navigation");
   const overlay = document.querySelector(".overlay");
 
-  const nav_close = document.querySelector(
-    ".navbar__navigation-button svg[name='nav_close']"
-  );
-  const nav_open = document.querySelector(
-    ".navbar__navigation-button svg[name='nav_open']"
-  );
+  const nav_close = document.getElementById("nav_close");
+  const nav_open = document.getElementById("nav_open");
 
   menu.addEventListener("click", menuHandler);
 
@@ -88,8 +83,6 @@
     } else {
       document.body.style.overflow = "auto";
       document.body.style.height = "auto";
-
     }
   }
-
 })();
