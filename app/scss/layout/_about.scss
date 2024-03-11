@@ -1,0 +1,46 @@
+.about {
+  @include respond(md) {
+    display: flex;
+  }
+
+  &__image {
+    height: 26.6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 26.6rem;
+
+    @include respond(md) {
+      height: auto;
+    }
+
+    &-1 {
+      background-image: url("./resources/image-about-dark.jpg");
+
+      @include respond(md) {
+        width: 29.17%;
+        flex-shrink: 0;
+      }
+    }
+
+    &-2 {
+      background-image: url("./resources/image-about-light.jpg");
+      @include respond(md) {
+        width: calc(50% - 160px);
+        flex-shrink: 0;
+      }
+
+      @include respond(xl) {
+        width: calc(41.67% - 160px);
+      }
+    }
+  }
+
+  &__copy {
+    padding: 5.2rem 3.2rem;
+
+    @include respond(lg) {
+      padding: 6.8rem 4.8rem;
+    }
+  }
+}

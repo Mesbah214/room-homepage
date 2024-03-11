@@ -1,11 +1,9 @@
-.header {
-  &__hero {
-    @include respond(md) {
-      display: flex;
-    }
+.hero {
+  @include respond(md) {
+    display: flex;
   }
 
-  &__controls {
+  &__carousel {
     position: relative;
 
     @include respond(md) {
@@ -18,59 +16,25 @@
     }
   }
 
-  &__img {
+  &__images {
     overflow: hidden;
+
+    @include respond(md) {
+      height: 100%;
+    }
 
     &-container {
       height: 360px;
       display: flex;
-      width: 300%;
-
-      transition: transform 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+      width: 500%;
 
       @include respond(md) {
         height: 100%;
       }
     }
-
-    @include respond(md) {
-      height: 100%;
-    }
   }
 
-  .slider-img {
-    height: 100%;
-    flex: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    &-1 {
-      background-image: url("./resources/mobile-image-hero-1.jpg");
-
-      @include respond(md) {
-        background-image: url("./resources/desktop-image-hero-1.jpg");
-      }
-    }
-
-    &-2 {
-      background-image: url("./resources/mobile-image-hero-2.jpg");
-
-      @include respond(md) {
-        background-image: url("./resources/desktop-image-hero-2.jpg");
-      }
-    }
-
-    &-3 {
-      background-image: url("./resources/mobile-image-hero-3.jpg");
-
-      @include respond(md) {
-        background-image: url("./resources/desktop-image-hero-3.jpg");
-      }
-    }
-  }
-
-  .controls {
+  &__controls {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -82,17 +46,15 @@
     }
   }
 
-  &__hero-copy {
+  &__copy {
     overflow: hidden;
 
     &-container {
       display: flex;
-      width: 300%;
-
-      transition: transform 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+      width: 500%;
     }
 
-    &-items {
+    &-item {
       padding: 6rem 3.2rem 7.4rem 3.2rem;
       flex: 1;
 
@@ -113,55 +75,36 @@
       }
     }
   }
-
-  &__about-our-furniture {
-    @include respond(md) {
-      display: flex;
-    }
-  }
-
-  &__copy {
-    padding: 5.2rem 3.2rem;
-
-    @include respond(lg) {
-      padding: 6.8rem 4.8rem;
-    }
-  }
-
-  @include respond(md) {
-    flex-grow: 1;
-  }
 }
 
-.about__image {
-  height: 26.6rem;
+.slider-img {
+  height: 100%;
+  flex: 1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 26.6rem;
 
   &-1 {
-    background-image: url("./resources/image-about-dark.jpg");
+    background-image: url("./resources/mobile-image-hero-1.jpg");
 
     @include respond(md) {
-      width: 29.17%;
-      flex-shrink: 0;
+      background-image: url("./resources/desktop-image-hero-1.jpg");
     }
   }
 
   &-2 {
-    background-image: url("./resources/image-about-light.jpg");
-    @include respond(md) {
-      width: calc(50% - 160px);
-      flex-shrink: 0;
-    }
+    background-image: url("./resources/mobile-image-hero-2.jpg");
 
-    @include respond(xl) {
-      width: calc(41.67% - 160px);
+    @include respond(md) {
+      background-image: url("./resources/desktop-image-hero-2.jpg");
     }
   }
 
-  @include respond(md) {
-    height: auto;
+  &-3 {
+    background-image: url("./resources/mobile-image-hero-3.jpg");
+
+    @include respond(md) {
+      background-image: url("./resources/desktop-image-hero-3.jpg");
+    }
   }
 }
