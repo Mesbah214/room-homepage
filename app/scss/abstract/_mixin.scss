@@ -31,4 +31,18 @@
       @content;
     }
   }
+
+  @if $breakpoint == fullShort {
+    // 100vh & 100vw
+    @media (min-height: 37.5em) and (min-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == fullHeight {
+    // 100vh & 100vw
+    @media (min-height: 43.75em) and (min-width: 81.25em) {
+      @content;
+    }
+  }
 }

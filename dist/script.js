@@ -59,7 +59,7 @@
     if (currentTime - lastTime < animationDuration) {
       return;
     }
-    direction == "right" ? counter++ : counter--;
+    direction === "right" ? counter++ : counter--;
     imgSlider.style.transition = "all 0.8s cubic-bezier(0.87, 0, 0.13, 1)";
     textSlider.style.transition = "all 0.8s cubic-bezier(0.87, 0, 0.13, 1)";
     changeSlides();

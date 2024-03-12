@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
 
     <!-- displays site properly based on user's device -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./css/resources/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./css/resources/favicon-32x32.png">
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- JS and css links -->
     <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Frontend Mentor | Room homepage</title>
 
@@ -28,7 +28,7 @@
 <div class="overlay"></div>
 
 <header class="navbar">
-    <div class="navbar__logo"><img src="./css/resources/logo.svg" alt="logo"/></div>
+    <a class="navbar__logo" href="#"><img src="./css/resources/logo.svg" alt="logo"></a>
 
     <nav class="navbar__navigation">
         <span id="nav-label" hidden>Navigation</span>
@@ -46,7 +46,7 @@
             </svg>
         </button>
 
-        <ul class="navbar__nav-list" role="dialog" aria-labelledby="nav-label">
+        <ul class="navbar__nav-list" aria-labelledby="nav-label">
             <li class="navbar__nav-item"><a href="" class="navbar__nav-link">home</a></li>
             <li class="navbar__nav-item"><a href="" class="navbar__nav-link">shop</a></li>
             <li class="navbar__nav-item"><a href="" class="navbar__nav-link">about</a></li>
@@ -84,7 +84,7 @@
             </div>
         </div>
 
-        <div class="hero__copy">
+        <div class="hero__copy" role="region">
             <div class="hero__copy-container" hero-copies>
                 <div class="hero__copy-item">
                     <h1 class="primary-heading">

@@ -3,10 +3,21 @@
     display: flex;
   }
 
+  @include respond(fullShort) {
+    height: 66vh;
+  }
+
   &__carousel {
     position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    @include respond(sm) {
+      aspect-ratio: 16/9;
+    }
 
     @include respond(md) {
+      aspect-ratio: auto;
       width: 50%;
       flex-shrink: 0;
     }
@@ -18,13 +29,14 @@
 
   &__images {
     overflow: hidden;
+    height: 100%;
 
     @include respond(md) {
       height: 100%;
     }
 
     &-container {
-      height: 360px;
+      height: 100%;
       display: flex;
       width: 500%;
 
@@ -41,7 +53,7 @@
     display: flex;
 
     @include respond(md) {
-      right: -160px;
+      left: 100%;
       z-index: 10;
     }
   }
@@ -52,6 +64,10 @@
     &-container {
       display: flex;
       width: 500%;
+
+      @include respond(fullShort) {
+        height: 100%;
+      }
     }
 
     &-item {
@@ -59,7 +75,7 @@
       flex: 1;
 
       @include respond(md) {
-        padding: 6rem 4rem 12rem;
+        padding-bottom: 12rem;
       }
 
       @include respond(lg) {
@@ -71,7 +87,19 @@
       }
 
       @include respond(2xl) {
-        padding: 12rem 10rem 14rem 10rem;
+        padding: 11.6rem 10rem 14rem 10rem;
+      }
+
+      @include respond(fullShort) {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 4vw 5rem;
+      }
+
+      @include respond(fullHeight) {
+        padding: 0 6.7vw 5rem;
       }
     }
   }
@@ -87,7 +115,7 @@
   &-1 {
     background-image: url("./resources/mobile-image-hero-1.jpg");
 
-    @include respond(md) {
+    @include respond(sm) {
       background-image: url("./resources/desktop-image-hero-1.jpg");
     }
   }
@@ -95,7 +123,7 @@
   &-2 {
     background-image: url("./resources/mobile-image-hero-2.jpg");
 
-    @include respond(md) {
+    @include respond(sm) {
       background-image: url("./resources/desktop-image-hero-2.jpg");
     }
   }
@@ -103,7 +131,7 @@
   &-3 {
     background-image: url("./resources/mobile-image-hero-3.jpg");
 
-    @include respond(md) {
+    @include respond(sm) {
       background-image: url("./resources/desktop-image-hero-3.jpg");
     }
   }
